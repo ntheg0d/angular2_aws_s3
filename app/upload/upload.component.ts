@@ -68,7 +68,7 @@ export class UploadComponent implements OnInit{
         formData.append('X-Amz-Signature',this.s3signature);
         formData.append('file',this.file);
 
-        xhr.open('POST','http://ntestbucket.s3.amazonaws.com/',true);
+        xhr.open('POST','http://YOURBUCKETNAME.s3.amazonaws.com/',true);
         xhr.send(formData);
     }
 

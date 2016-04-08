@@ -68,7 +68,7 @@ System.register(['angular2/core', 'angular2/http', "./upload.service"], function
                     formData.append('Policy', this.policy);
                     formData.append('X-Amz-Signature', this.s3signature);
                     formData.append('file', this.file);
-                    xhr.open('POST', 'http://ntestbucket.s3.amazonaws.com/', true);
+                    xhr.open('POST', 'http://YOURBUCKETNAME.s3.amazonaws.com/', true);
                     xhr.send(formData);
                 };
                 //Map file on change
